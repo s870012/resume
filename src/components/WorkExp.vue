@@ -2,7 +2,7 @@
 
 <template>
   <section>
-    <div class="container">
+    <div class="container py-5">
       <h2 class="my-3">工作經歷</h2>
       <div class="row row-cols-1 mx-auto">
         <div class="col">

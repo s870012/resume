@@ -2,12 +2,13 @@
 import TheAbilities from './components/TheAbilities.vue'
 import TheProjects from './components/TheProjects.vue'
 import WorkExp from './components/WorkExp.vue'
+import TheResume from './components/TheResume.vue'
 </script>
 
 <template>
   <section>
     <div class="container">
-      <div class="row my-5">
+      <div class="row py-5">
         <div class="col-9">
           <div class="d-flex align-items-center">
             <h1 class="fs-64 me-5">陳昭維</h1>
@@ -29,6 +30,7 @@ import WorkExp from './components/WorkExp.vue'
   </section>
   <TheAbilities />
   <TheProjects />
+  <TheResume />
   <WorkExp />
 </template>
 
