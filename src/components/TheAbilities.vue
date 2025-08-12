@@ -5,7 +5,7 @@
     <div class="container">
       <div class="row">
         <h2 class="mb-3">專業技能</h2>
-        <div class="col">
+        <div class="col-12 col-lg-3">
           <div class="card border-0 bg-light">
             <h4 class="card-head">React、Vue</h4>
             <div class="card-body">
@@ -19,7 +19,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-12 col-lg-3">
           <div class="card border-0 bg-light">
             <h4 class="card-head">JavaScript</h4>
             <div class="card-body">
@@ -30,7 +30,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-12 col-lg-3">
           <div class="card border-0 bg-light">
             <h4 class="card-head">Web Layout</h4>
             <div class="card-body">
@@ -42,7 +42,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-12 col-lg-3">
           <div class="card border-0 bg-light">
             <h4 class="card-head">Others</h4>
             <div class="card-body">

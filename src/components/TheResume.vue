@@ -1,4 +1,42 @@
-<script setup></script>
+<script setup>
+const imgList = [
+  {
+    id:1,
+    imgUrl:'React-finish.png',
+    description:'React 作品實戰班 - 2024 冬季班'
+  },
+  {
+    id:2,
+    imgUrl:'JS-finish.png',
+    description:'JS工程師養成直播班 - 2024 秋季班'
+  },
+  {
+    id:3,
+    imgUrl:'test-award.png',
+    description:'2024 網頁切版專題班 上機考證書'
+  },
+  {
+    id:4,
+    imgUrl:'Layout-finish.png',
+    description:'網頁切班直播班 - 2024 夏季班'
+  },
+  {
+    id:5,
+    imgUrl:'layout.png',
+    description:'網頁切班直播班學霸獎狀 - 2024 夏季班'
+  },
+  {
+    id:6,
+    imgUrl:'camp-finish.png',
+    description:'2024軟體工程師體驗營'
+  },
+]
+
+const getImg = (img) =>{
+  return new URL(`../asset/images/${img}`, import.meta.url).href
+}
+
+</script>
 
 <template>
   <section>
@@ -36,7 +74,7 @@
         <div class="col-10 mx-auto">
           <h4 class="fw-bold text-center">課程證書</h4>
         </div>
-        <div class="col-4">
+        <!-- <div class="col-4">
           <img src="../asset/images/React-finish.png" alt="" class="d-block w-100 mb-1 rounded-1" />
           <p class="text-center">React 作品實戰班 - 2024 冬季班</p>
         </div>
@@ -63,6 +101,10 @@
         <div class="col-4">
           <img src="../asset/images/camp-finish.png" alt="" class="d-block w-100 mb-1 rounded-1" />
           <p class="text-center">2024軟體工程師體驗營</p>
+        </div> -->
+        <div class="col-6 col-lg-4" v-for="img in imgList" :key="img.id">
+          <img :src="getImg(img.imgUrl)" alt="certificate" class="d-block w-100 mb-1 rounded-1" />
+          <p class="text-center">{{img.description}}</p>
         </div>
       </div>
     </div>

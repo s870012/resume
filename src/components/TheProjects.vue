@@ -1,10 +1,50 @@
-<script setup></script>
+<script setup>
+const projectList = [
+  {
+    name:'Black Heart麵包電商網站',
+    description:'文青風的麵包電商網站，使用React框架開發。有基本的電商購物車功能，透過串接API呈現產品資訊及活動訊息，並可透過後台系統隨時更改內容。',
+    imgUrl:'',
+    pageUrl:'',
+    githubUrl:'https://github.com/s870012/JSFinal',
+    tables:['ReactJS', 'JavaScript', 'Bootstrap']
+  }
+]
+</script>
 
 <template>
   <section>
     <div class="container py-5">
       <div class="row g-4">
         <h2 class="">專案作品</h2>
+        <div class="col-4" v-for="project in projectList" :key="project">
+          <div class="card d-flex flex-column h-100">
+            <div class="card-head">
+              <img
+                src="../asset/images/bread.png"
+                alt=""
+                class="d-block w-100 rounded-2"
+                :style="{ height: '220px' }"
+              />
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="mb-2">{{project.name}}</h5>
+              <ul class="d-flex list-unstyled mb-2 fs-7">
+                <li class="bg-info text-white rounded-1 me-2 px-1">ReactJS</li>
+                <li class="bg-info text-white rounded-1 me-2 px-1">JavaScript</li>
+                <li class="bg-info text-white rounded-1 me-2 px-1">Bootstrap</li>
+              </ul>
+              <p class="mb-3">
+                {{project.description}}
+              </p>
+              <div class="d-flex mt-auto">
+                <a href="" class="btn btn-outline-danger me-2">
+                  網站連結 <i class="bi bi-box-arrow-right"></i>
+                </a>
+                <a href="{https://github.com/s870012/JSFinal}" target="_blanket" class="btn btn-outline-danger">GitHub <i class="bi bi-box-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-4">
           <div class="card d-flex flex-column h-100">
             <div class="card-head">
@@ -26,12 +66,10 @@
                 文青風的麵包電商網站，使用React框架開發。有基本的電商購物車功能，透過串接API呈現產品資訊及活動訊息，並可透過後台系統隨時更改內容。
               </p>
               <div class="d-flex mt-auto">
-                <button type="button" class="btn btn-outline-danger me-2">
+                <a href="" class="btn btn-outline-danger me-2">
                   網站連結 <i class="bi bi-box-arrow-right"></i>
-                </button>
-                <button type="button" class="btn btn-outline-danger">
-                  GitHub <i class="bi bi-box-arrow-right"></i>
-                </button>
+                </a>
+                <a href="https://github.com/s870012/JSFinal" target="_blanket" class="btn btn-outline-danger">GitHub <i class="bi bi-box-arrow-right"></i></a>
               </div>
             </div>
           </div>
