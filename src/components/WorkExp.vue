@@ -1,14 +1,14 @@
 <script setup></script>
 
 <template>
-  <section>
-    <div class="container py-5">
-      <h2 class="my-3">工作經歷</h2>
-      <div class="row row-cols-1 mx-auto">
-        <div class="col-4 border-dark border-end">
+  <section id="workExp">
+    <div class="container py-5 blockquote lh-lg">
+      <h2 class="my-3 fw-bold">工作經歷</h2>
+      <div class="row row-cols-1 mx-auto pb-4">
+        <div class="col-4 border-black-50 border-end">
           <div class="mb-3">
-            <h4 class="mb-2">業務專員</h4>
-            <p>中國貨櫃運輸股份有限公司 2022/1-至今</p>
+            <h4 class="mb-2 fw-bold">業務專員</h4>
+            <p class="mb-2">中國貨櫃運輸股份有限公司 2022/1-至今</p>
             <p>德翔船務代理股份有限公司 2019/7-2021/3</p>
           </div>
         </div>
@@ -22,9 +22,9 @@
         </div>
       </div>
       <div class="row row-cols-1 mx-auto">
-        <div class="col-4 border-dark border-end">
+        <div class="col-4 border-black-50 border-end">
           <div class="">
-            <h4 class="mb-2">運輸規劃師</h4>
+            <h4 class="mb-2 fw-bold">運輸規劃師</h4>
             <p>揚立科技有限公司 2018/1-2019/6</p>
           </div>
         </div>
