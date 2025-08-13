@@ -25,8 +25,8 @@
                 </p>
               </div>
               <div class="text-end">
-                <p><i class="bi bi-envelope"></i> 連絡電話 : 0988-189159</p>
-                <p><i class="bi bi-telephone"></i> 電子信箱 : s8700122000@gmail.com</p>
+                <p><i class="bi bi-envelope"></i> 連絡電話 : 0988-000000</p>
+                <p><i class="bi bi-telephone"></i> 電子信箱 : eaxmple@gmail.com</p>
               </div>
             </div>
           </div>
