@@ -7,28 +7,8 @@ const imgList = [
   },
   {
     id: 2,
-    imgUrl: 'JS-finish.png',
-    description: 'JS工程師養成直播班 - 2024 秋季班',
-  },
-  {
-    id: 3,
     imgUrl: 'test-award.png',
     description: '2024 網頁切版專題班 上機考證書',
-  },
-  {
-    id: 4,
-    imgUrl: 'Layout-finish.png',
-    description: '網頁切班直播班 - 2024 夏季班',
-  },
-  {
-    id: 5,
-    imgUrl: 'layout.png',
-    description: '網頁切班直播班學霸獎狀 - 2024 夏季班',
-  },
-  {
-    id: 6,
-    imgUrl: 'camp-finish.png',
-    description: '2024軟體工程師體驗營',
   },
 ]
 
@@ -66,9 +46,10 @@ const getImg = (img) => {
             <div class="lh-lg">
               <h5 class="fw-bold">前端之路：</h5>
               <p>
-                參加六角學院的「前端
-                React培訓班」。這門課程涵蓋了完整且紮實的前端基礎知識，讓我決定毅然決然地投入學習。經過為期
-                9 個月的密集訓練，我系統性地掌握了網頁切版、JavaScript 程式語言以及 React
+                參加六角學院的「前端 React
+                培訓班」。這門課程涵蓋了完整且紮實的前端基礎知識，讓我決定毅然決然地投入學習。<strong>
+                  經過為期 9 個月的密集訓練</strong
+                >，我系統性地掌握了網頁切版、JavaScript 程式語言以及 React
                 框架的核心概念與實作能力。學習期間，我完成一個React實戰作品、三個切版作品，也參與團隊合作開發專案，從需求溝通、UI
                 規劃到功能開發與問題排解，完整體驗了實際開發流程，為未來職場銜接打下了穩固的基礎。這段學習歷程不僅強化了我的技術能力，也讓我對於成為一名前端工程師充滿信心。
               </p>
@@ -80,7 +61,7 @@ const getImg = (img) => {
         <div class="col-10 mx-auto">
           <h4 class="fw-bold text-center">課程證書</h4>
         </div>
-        <div class="col-6 col-lg-4" v-for="img in imgList" :key="img.id">
+        <div class="col-sm-6" v-for="img in imgList" :key="img.id">
           <img :src="getImg(img.imgUrl)" alt="certificate" class="d-block w-100 mb-1 rounded-1" />
           <p class="text-center">{{ img.description }}</p>
         </div>

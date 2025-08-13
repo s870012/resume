@@ -18,22 +18,6 @@ const projectList = [
     githubUrl: 'https://github.com/hexschool2024d12/learnplus',
     tables: ['JavaScript', 'Bootstrap', 'SCSS'],
   },
-  {
-    name: '一頁式電商網站',
-    description: '一頁式電商網站，選擇最適合的寢室家具。',
-    imgUrl: 'bed.png',
-    pageUrl: 'https://s870012.github.io/JSFinal/index.html',
-    githubUrl: 'https://github.com/s870012/JSFinal/tree/main',
-    tables: ['JavaScript', 'Bootstrap'],
-  },
-  {
-    name: '旅遊網站',
-    description: '旅遊網站製作，Bootstrap切版及RWD響應式設計。',
-    imgUrl: 'travel.png',
-    pageUrl: 'https://s870012.github.io/layoutweek6/index.html',
-    githubUrl: 'https://github.com/s870012/layoutweek6',
-    tables: ['Bootstrap', 'SCSS', 'vite'],
-  },
 ]
 
 const getImg = (img) => {
@@ -46,14 +30,14 @@ const getImg = (img) => {
     <div class="container py-5">
       <div class="row g-4">
         <h2 class="fw-bold">專案作品</h2>
-        <div class="col-sm-6 col-lg-4" v-for="project in projectList" :key="project">
+        <div class="col-sm-6" v-for="project in projectList" :key="project">
           <div class="card d-flex flex-column h-100">
             <div class="card-head">
               <img
                 :src="getImg(project.imgUrl)"
                 alt=""
                 class="d-block w-100 rounded-2"
-                :style="{ height: '220px' }"
+                :style="{ height: '350px' }"
               />
             </div>
             <div class="card-body d-flex flex-column">

@@ -2,40 +2,40 @@
 const abilityList = [
   {
     id: 'a001',
-    name: 'React、Vue',
-    imgUrl: ['react-icon.png', 'vue-icon.png'],
+    name: 'React',
+    imgUrl: 'react-icon.png',
     contents: [
-      '使用Vite開發SPA電商網站',
-      '模組化開發-使用Components實作',
+      '使用 Vite 開發 SPA 電商網站',
+      '模組化開發 - 使用 Components 實作',
       '前後端分離開發',
-      'Router應用',
-      'Redux Toolkit應用',
+      'Router 應用',
+      'Redux Toolkit 應用',
     ],
   },
   {
     id: 'a002',
     name: 'JavaScript',
-    imgUrl: ['js-icon.png'],
+    imgUrl: 'js-icon.png',
     contents: [
-      '熟悉AJAX / JSON格式與串接API<',
-      '模組化開發-熟悉ES6標準與JavaScript特性(this、一級涵式、高階函式應用)',
+      '熟悉 AJAX / JSON 格式與串接 API',
+      '模組化開發-熟悉 ES6 標準與 JavaScript 特性( this、一級函式、高階函式應用 )',
     ],
   },
   {
     id: 'a003',
     name: 'Web Layout',
-    imgUrl: ['css-icon.png'],
+    imgUrl: 'css-icon.png',
     contents: [
       'HTML5、CSS',
-      '使用SCSS開發，熟悉Smacss與OOCSS開發模式',
-      '模組化開發-熟悉Bootstrap 5及客製化、RWD自適應網頁開發',
+      '使用 SCSS 開發，熟悉 SMACSS 與 OOCSS 開發模式',
+      '模組化開發-熟悉 Bootstrap 5 及客製化、RWD 自適應網頁開發',
     ],
   },
   {
     id: 'a004',
     name: 'Others',
-    imgUrl: ['other-icon.png'],
-    contents: ['Git、GitHub', '模組化開發-理解Git Flow工作流程'],
+    imgUrl: 'other-icon.png',
+    contents: ['Git、GitHub', '模組化開發-理解 Git Flow 工作流程'],
   },
 ]
 
@@ -53,9 +53,7 @@ const getImg = (img) => {
           <div class="card border-0 bg-light">
             <div class="d-flex align-items-center">
               <img
-                v-for="img in ability.imgUrl"
-                :key="img"
-                :src="getImg(img)"
+                :src="getImg(ability.imgUrl)"
                 alt="icon"
                 class="d-block me-1"
                 :style="{ height: '40px', maxWidth: '100' }"
@@ -63,7 +61,7 @@ const getImg = (img) => {
               <h4 class="card-head">{{ ability.name }}</h4>
             </div>
             <div class="card-body">
-              <ul class="list-unstyled">
+              <ul class="ps-0">
                 <li v-for="item in ability.contents" :key="item" class="mb-2">{{ item }}</li>
               </ul>
             </div>
