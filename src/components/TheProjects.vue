@@ -46,7 +46,7 @@ const getImg = (img) => {
     <div class="container py-5">
       <div class="row g-4">
         <h2 class="fw-bold">專案作品</h2>
-        <div class="col-4" v-for="project in projectList" :key="project">
+        <div class="col-sm-6 col-lg-4" v-for="project in projectList" :key="project">
           <div class="card d-flex flex-column h-100">
             <div class="card-head">
               <img

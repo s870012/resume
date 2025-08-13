@@ -49,7 +49,7 @@ const getImg = (img) => {
     <div class="container">
       <div class="row">
         <h2 class="fw-bold mb-3">專業技能</h2>
-        <div class="col-12 col-lg-3" v-for="ability in abilityList" :key="ability.id">
+        <div class="col-sm-6 col-md-3" v-for="ability in abilityList" :key="ability.id">
           <div class="card border-0 bg-light">
             <div class="d-flex align-items-center">
               <img

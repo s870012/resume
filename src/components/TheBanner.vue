@@ -4,17 +4,17 @@
   <section>
     <div class="bg-banner">
       <div class="container pt-5 mb-5">
-        <div class="row py-5">
+        <div class="row flex-column flex-md-row py-5">
           <div class="col-3">
             <img
-              src="../asset/images/selfie.jpg"
+              src="#"
               alt=""
               class="d-block border rounded-circle object-fit"
               :style="{ height: '200px', width: '200px' }"
             />
           </div>
           <div class="col-9">
-            <div class="d-flex align-items-center justify-content-between">
+            <div class="d-lg-flex align-items-center justify-content-between">
               <div>
                 <h1 class="fw-bold fs-64 mb-3">Name</h1>
                 <p class="fs-3 mb-4">期望職位：前端工程師</p>
@@ -25,8 +25,8 @@
                 </p>
               </div>
               <div class="text-end">
-                <p>連絡電話 : 0988-189159</p>
-                <p>電子信箱 : s8700122000@gmail.com</p>
+                <p><i class="bi bi-envelope"></i> 連絡電話 : 0988-189159</p>
+                <p><i class="bi bi-telephone"></i> 電子信箱 : s8700122000@gmail.com</p>
               </div>
             </div>
           </div>
