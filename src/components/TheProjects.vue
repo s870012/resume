@@ -1,14 +1,14 @@
 <script setup>
 const projectList = [
   {
-    name: 'Black Heart麵包電商網站',
+    name: 'Black Heart 麵包電商網站',
     description:
-      '使用React框架開發。電商購物車功能，透過串接API呈現產品資訊及活動訊息，並可透過後台系統隨時更改內容。',
+      '使用 React 框架開發。電商購物車功能，透過串接API呈現產品資訊及活動訊息，並可透過後台系統隨時更改內容。',
     frontFunction: [
       '商品瀏覽：支援依產品分類及單一商品檢視',
       '購物車與結帳流程：優惠碼套入、訂單建立',
       '管理者帳號登入：管理者後台登入',
-      'RWD響應式設計：支援手機及電腦',
+      'RWD 響應式設計：支援手機及電腦',
     ],
     backFunction: [
       '商品管理：新增、編輯商品內容',
@@ -22,9 +22,9 @@ const projectList = [
     tables: ['ReactJS', 'JavaScript', 'Bootstrap', 'AJAX'],
   },
   {
-    name: '學識伴LearnPlus++',
+    name: '學識伴 LearnPlus++',
     description:
-      '團隊共同開發，依據使用者MBTI屬性，推薦適合的課程或文章，使用者可依據教師MBTI屬性不同購買適合課程。',
+      '團隊共同開發，依據使用者 MBTI 屬性，推薦適合的課程或文章，使用者可依據教師 MBTI 屬性不同購買適合課程。',
     imgUrl: 'LearnPlus.png',
     pageUrl: 'https://hexschool2024d12.github.io/learnplus/index.html',
     githubUrl: 'https://github.com/hexschool2024d12/learnplus',
