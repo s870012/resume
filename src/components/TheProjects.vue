@@ -3,7 +3,19 @@ const projectList = [
   {
     name: 'Black Heart麵包電商網站',
     description:
-      '文青風的麵包電商網站，使用React框架開發。有基本的電商購物車功能，透過串接API呈現產品資訊及活動訊息，並可透過後台系統隨時更改內容。',
+      '使用React框架開發。電商購物車功能，透過串接API呈現產品資訊及活動訊息，並可透過後台系統隨時更改內容。',
+    frontFunction: [
+      '商品瀏覽：支援依產品分類及單一商品檢視',
+      '購物車與結帳流程：優惠碼套入、訂單建立',
+      '管理者帳號登入：管理者後台登入',
+      'RWD響應式設計：支援手機及電腦',
+    ],
+    backFunction: [
+      '商品管理：新增、編輯商品內容',
+      '訂單管理：查看訂單狀態並更改',
+      '優惠券管理：新增及編輯優惠券',
+      '活動資訊管理：新增或編輯活動資訊',
+    ],
     imgUrl: 'bread.png',
     pageUrl: 'https://s870012.github.io/ReactFinal/',
     githubUrl: 'https://github.com/s870012/ReactFinal',
@@ -54,6 +66,9 @@ const getImg = (img) => {
               <p class="mb-3">
                 {{ project.description }}
               </p>
+              <ul>
+                <li v-for="content in project.frontFunction" :key="content">{{ content }}</li>
+              </ul>
               <div class="d-flex mt-auto">
                 <a :href="project.pageUrl" class="btn btn-outline-danger me-2" target="_blanket">
                   網站連結 <i class="bi bi-box-arrow-right"></i>
