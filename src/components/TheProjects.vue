@@ -40,44 +40,28 @@ const getImg = (img) => {
 <template>
   <section id="projects">
     <div class="container py-5">
+      <h2 class="fw-bold">專案作品</h2>
       <div class="row g-4">
-        <h2 class="fw-bold">專案作品</h2>
-        <div class="col-sm-6" v-for="project in projectList" :key="project">
-          <div class="card d-flex flex-column h-100">
-            <div class="card-head">
-              <img
-                :src="getImg(project.imgUrl)"
-                alt=""
-                class="d-block w-100 rounded-2"
-                :style="{ height: '350px' }"
-              />
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="mb-2">{{ project.name }}</h5>
-              <ul class="d-flex list-unstyled mb-2 fs-7">
-                <li
-                  class="bg-info text-white rounded-1 me-2 px-1"
-                  v-for="table in project.tables"
-                  :key="table"
-                >
-                  {{ table }}
-                </li>
-              </ul>
-              <p class="mb-3">
-                {{ project.description }}
-              </p>
-              <ul>
-                <li v-for="content in project.frontFunction" :key="content">{{ content }}</li>
-              </ul>
-              <div class="d-flex mt-auto">
-                <a :href="project.pageUrl" class="btn btn-outline-danger me-2" target="_blanket">
-                  網站連結 <i class="bi bi-box-arrow-right"></i>
-                </a>
-                <a :href="project.githubUrl" target="_blanket" class="btn btn-outline-danger"
-                  >GitHub <i class="bi bi-box-arrow-right"></i
-                ></a>
-              </div>
-            </div>
+        <div class="col-4">
+          <img
+            :src="getImg(projectList[0].imgUrl)"
+            alt=""
+            class="d-block w-100 rounded-2"
+            :style="{ height: '350px' }"
+          />
+        </div>
+        <div class="col-8">
+          <h5>{{ projectList[0].name }}</h5>
+          <ul class="d-flex list-unstyled mb-2 fs-7">
+            <li class="bg-info text-white rounded-1 me-2 px-1"></li>
+          </ul>
+          <div class="d-flex mt-auto">
+            <a :href="project.pageUrl" class="btn btn-outline-danger me-2" target="_blanket">
+              網站連結 <i class="bi bi-box-arrow-right"></i>
+            </a>
+            <a :href="project.githubUrl" target="_blanket" class="btn btn-outline-danger"
+              >GitHub <i class="bi bi-box-arrow-right"></i
+            ></a>
           </div>
         </div>
       </div>

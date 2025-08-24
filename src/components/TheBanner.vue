@@ -7,9 +7,9 @@
         <div class="row flex-column flex-md-row py-5">
           <div class="col-3">
             <img
-              src="#"
+              src="../asset/images/selfie.jpg"
               alt=""
-              class="d-block border rounded-circle object-fit"
+              class="d-block border rounded-circle object-fit-cover"
               :style="{ height: '200px', width: '200px' }"
             />
           </div>
