@@ -25,6 +25,12 @@ const projectList = [
     name: '學識伴 LearnPlus++',
     description:
       '團隊共同開發，依據使用者 MBTI 屬性，推薦適合的課程或文章，使用者可依據教師 MBTI 屬性不同購買適合課程。',
+    frontFunction: [
+      '商品瀏覽：商品列表及示範商品瀏覽',
+      'RWD 響應式設計：支援手機及電腦',
+      '管理者帳號登入',
+    ],
+    backFunction: [],
     imgUrl: 'LearnPlus.png',
     pageUrl: 'https://hexschool2024d12.github.io/learnplus/index.html',
     githubUrl: 'https://github.com/hexschool2024d12/learnplus',
@@ -40,26 +46,94 @@ const getImg = (img) => {
 <template>
   <section id="projects">
     <div class="container py-5">
-      <h2 class="fw-bold">專案作品</h2>
-      <div class="row g-4">
-        <div class="col-4">
+      <h2 class="fw-bold mb-4">專案作品</h2>
+      <div class="row mb-4">
+        <div class="col-md-5">
           <img
             :src="getImg(projectList[0].imgUrl)"
             alt=""
-            class="d-block w-100 rounded-2"
+            class="d-block w-100 rounded-2 border"
             :style="{ height: '350px' }"
           />
         </div>
-        <div class="col-8">
-          <h5>{{ projectList[0].name }}</h5>
-          <ul class="d-flex list-unstyled mb-2 fs-7">
-            <li class="bg-info text-white rounded-1 me-2 px-1"></li>
-          </ul>
-          <div class="d-flex mt-auto">
-            <a :href="project.pageUrl" class="btn btn-outline-danger me-2" target="_blanket">
+        <div class="col-md-7 d-flex flex-column">
+          <div class="mb-4">
+            <h3 class="fw-bold mb-2">{{ projectList[0].name }}</h3>
+            <p class="mb-2">
+              {{ projectList[0].description }}
+            </p>
+            <ul class="d-flex list-unstyled mb-2 fs-7">
+              <li
+                class="bg-info text-white rounded-1 me-2 px-1"
+                v-for="table in projectList[0].tables"
+                :key="table"
+              >
+                {{ table }}
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex">
+            <div class="me-5">
+              <h5 class="mb-2">前台功能：</h5>
+              <ul>
+                <li v-for="front in projectList[0].frontFunction" :key="front">{{ front }}</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="mb-2">後台功能：</h5>
+              <ul>
+                <li v-for="back in projectList[0].backFunction" :key="back">{{ back }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end mt-auto">
+            <a :href="projectList[0].pageUrl" class="btn btn-outline-danger me-2" target="_blanket">
               網站連結 <i class="bi bi-box-arrow-right"></i>
             </a>
-            <a :href="project.githubUrl" target="_blanket" class="btn btn-outline-danger"
+            <a :href="projectList[0].githubUrl" target="_blanket" class="btn btn-outline-danger"
+              >GitHub <i class="bi bi-box-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <img
+            :src="getImg(projectList[1].imgUrl)"
+            alt=""
+            class="d-block w-100 rounded-2 border"
+            :style="{ height: '350px' }"
+          />
+        </div>
+        <div class="col-md-7 d-flex flex-column">
+          <div class="mb-4">
+            <h3 class="fw-bold mb-2">{{ projectList[1].name }}</h3>
+            <p class="mb-2">
+              {{ projectList[1].description }}
+            </p>
+            <ul class="d-flex list-unstyled mb-2 fs-7">
+              <li
+                class="bg-info text-white rounded-1 me-2 px-1"
+                v-for="table in projectList[1].tables"
+                :key="table"
+              >
+                {{ table }}
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex">
+            <div class="me-5">
+              <h5 class="mb-2">前台功能：</h5>
+              <ul>
+                <li v-for="front in projectList[1].frontFunction" :key="front">{{ front }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end mt-auto">
+            <a :href="projectList[1].pageUrl" class="btn btn-outline-danger me-2" target="_blanket">
+              網站連結 <i class="bi bi-box-arrow-right"></i>
+            </a>
+            <a :href="projectList[1].githubUrl" target="_blanket" class="btn btn-outline-danger"
               >GitHub <i class="bi bi-box-arrow-right"></i
             ></a>
           </div>
